@@ -62,6 +62,74 @@
             }
         }
     }
+    .progressCardsDiv
+    {
+        width:100%;
+        display:flex;
+        justify-content: space-between;
+
+        padding-bottom: 80px;
+        border-bottom:4px solid #005377;
+
+        .finished_border-color
+        {
+            border-top: 5px solid #06A77D !important;
+        }
+
+        .now_border-color
+        {
+            border-top: 5px solid #F1A208 !important;
+        }
+
+        .next_border-color
+        {
+            border-top: 5px solid #052F5F !important;
+        }
+
+        .later_border-color
+        {
+            border-top: 5px solid gray !important;
+        }
+
+        .progressCard
+        {
+            width:400px;
+
+
+            // background-color:lightcoral;
+            // border-top:2px solid black;
+
+            h2
+            {
+                margin:0;
+                margin-top:10px;
+            }
+
+            p
+            {
+                width:50ch;
+                margin:0;
+
+            }
+
+            .progressCardContent
+            {
+                margin-top:30px;
+
+                .progressCardItem
+                {
+                    border-bottom:1px solid #052F5F;
+                    padding-bottom:20px;
+                    margin-top:10px;
+                    
+                    h3
+                    {
+                        margin:0;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 1200px)

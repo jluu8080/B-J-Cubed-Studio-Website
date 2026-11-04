@@ -8,9 +8,6 @@ export default
             
             <img src="images/WayfarerStainedLogosvg.svg" class="wayfarerGameLogo">
         </div>
-        
-        
-        <a href="#projects">Learn More →</a>
     </div>
 
     <div class="phasesDiv">
@@ -59,7 +56,7 @@ export default
         <div class="progress_barCard">
 
             <div class="progressTrack isActive">
-                <div class="progressFill"></div>
+                <div class="progressFill isActive"></div>
             </div>
 
             <div class="progress_barCard_Header">
@@ -70,7 +67,7 @@ export default
                 </div>
             </div>
 
-            <p class="progress_desc">With a playable beta build in hand, we're refining balance, polishing the rules, and building out the companion app and website</p>
+            <p class="progress_desc">With a playable beta build in hand, we're refining balance, polishing the rules, and building out the companion app and website.</p>
         </div>
 
         <div class="progress_barCard">
@@ -80,16 +77,86 @@ export default
             </div>
 
             <div class="progress_barCard_Header">
-                <p class="header">Redeacted</p>
-
-                <div class="state">
-                    <p></p>
-                </div>
+                <p class="header">Redacted</p>
             </div>
 
             <p class="progress_desc">Redacted</p>
         </div>
 
+    </div>
+
+    <div class="progress_StateCardsDiv">
+        <div class="progressCard finished_border-color">
+            <h2>Finished</h2>
+
+            <p>Coming Soon</p>
+
+            <div class="progressCardContent">
+                <div class="progressCardItem">
+                    <h3>Movement</h3>
+                    <p>Coming Soon</p>
+                </div>
+
+                <div class="progressCardItem">
+                    <h3>Movement</h3>
+                    <p>Coming Soon</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="progressCard now_border-color">
+            <h2>Now</h2>
+
+            <p>Coming Soon</p>
+
+            <div class="progressCardContent">
+                <div class="progressCardItem">
+                    <h3>Movement</h3>
+                    <p>Coming Soon</p>
+                </div>
+
+                <div class="progressCardItem">
+                    <h3>Movement</h3>
+                    <p>Coming Soon</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="progressCard next_border-color">
+            <h2>Next</h2>
+
+            <p>Coming Soon</p>
+
+            <div class="progressCardContent">
+                <div class="progressCardItem">
+                    <h3>Movement</h3>
+                    <p>Coming Soon</p>
+                </div>
+
+                <div class="progressCardItem">
+                    <h3>Movement</h3>
+                    <p>Coming Soon</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="progressCard later_border-color">
+            <h2>Later</h2>
+
+            <p>Coming Soon</p>
+
+            <div class="progressCardContent">
+                <div class="progressCardItem">
+                    <h3>Movement</h3>
+                    <p>Coming Soon</p>
+                </div>
+
+                <div class="progressCardItem">
+                    <h3>Movement</h3>
+                    <p>Coming Soon</p>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -106,7 +173,7 @@ export default
                 <p class="progressUpdateDate">Sep. 26</p>
                 <h3>#1: sadadasdasd</h3>
 
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe provident aspernatur rerum laborum consequuntur distinctio rem, harum nihil praesentium delectus maiores porro cum minima magnam autem non asperiores laudantium enim.</p>
+                <p>Coming Soon</p>
             </div>
         </div>
 
@@ -117,7 +184,7 @@ export default
                 <p class="progressUpdateDate">Sep. 26</p>
                 <h3>#1: sadadasdasd</h3>
 
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe provident aspernatur rerum laborum consequuntur distinctio rem, harum nihil praesentium delectus maiores porro cum minima magnam autem non asperiores laudantium enim.</p>
+                <p>Coming Soon</p>
             </div>
         </div>
 
@@ -128,7 +195,7 @@ export default
                 <p class="progressUpdateDate">Sep. 26</p>
                 <h3>#1: sadadasdasd</h3>
 
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe provident aspernatur rerum laborum consequuntur distinctio rem, harum nihil praesentium delectus maiores porro cum minima magnam autem non asperiores laudantium enim.</p>
+                <p>Coming Soon</p>
             </div>
         </div>
 
@@ -139,7 +206,7 @@ export default
                 <p class="progressUpdateDate">Sep. 26</p>
                 <h3>#1: sadadasdasd</h3>
 
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe provident aspernatur rerum laborum consequuntur distinctio rem, harum nihil praesentium delectus maiores porro cum minima magnam autem non asperiores laudantium enim.</p>
+                <p>Coming Soon</p>
             </div>
         </div>
     </div>

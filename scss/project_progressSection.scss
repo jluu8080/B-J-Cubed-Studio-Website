@@ -14,8 +14,6 @@
 
     .progressSectionHeader
     {
-        // background-color:aliceblue;
-
         display:flex;
         align-items: center;
 
@@ -31,6 +29,7 @@
         .wayfarerGameLogo
         {
             width:455px;
+            max-width:100%;
             margin-bottom:20px;
         }
     }
@@ -61,20 +60,15 @@
 
         display:flex;
         justify-content: space-between;
-        gap:15px;
+        gap:30px;   // matches the state cards so the columns line up
 
         margin-bottom:40px;
         padding-left:6px; //Just to line it up with the h1
 
-        // background-color:lightcyan;
-
         .progress_barCard
         {
-            // background-color: red;
-            width: 400px;
-
-            // padding-left: 15px;
-            // padding-right: 15px;
+            flex:1;        // was width: 400px
+            min-width:0;
 
             .progressTrack
             {
@@ -116,6 +110,7 @@
             {
                 margin-top:25px;
                 display:flex;
+                flex-wrap: wrap;   // pill drops under the title if it's tight
                 gap:10px;
 
                 .header
@@ -139,8 +134,6 @@
                     padding-left:10px;
                     padding-right:10px;
 
-                    // background-color: red;
-
                     &.current
                     {
                         background-color:  #F1A208;
@@ -150,14 +143,11 @@
                     &.finished
                     {
                         background-color:  #06A77D;
-                        // border: 2px solid #06A77D;
                         color: #FFF; 
                     }
 
-
                     &.future
                     {
-                        // border: 2px solid #052F5F;
                         background-color: #989898;
                         color: #fff;
                     }
@@ -165,15 +155,12 @@
                     p
                     {
                         margin:0;
-                        // padding:0;
-
                         text-align: center;
                         font-size: 16px;
                         letter-spacing: 1px;
                     }
                 }
             }
-
         }
     }
 
@@ -181,6 +168,10 @@
     {
         display:flex;
         justify-content: space-between;
+        gap:30px;
+
+        padding-bottom: 80px;
+        border-bottom:4px solid #005377;   // from your old version, delete if you don't want the line
 
         .finished_border-color
         {
@@ -204,11 +195,8 @@
 
         .progressCard
         {
-            width:400px;
-
-
-            // background-color:lightcoral;
-            // border-top:2px solid black;
+            flex:1;        // was width: 400px
+            min-width:0;
 
             h2
             {
@@ -218,9 +206,8 @@
 
             p
             {
-                width:50ch;
+                max-width:50ch;   // was width: 50ch
                 margin:0;
-
             }
 
             .progressCardContent
@@ -241,148 +228,104 @@
             }
         }
     }
-
 }
 
 @media (max-width: 1200px)
 {
+    .index_progressSection,
     .project_progressSection
     {
-        padding: 40px 25px 0;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 
-        .progressBarCardsDiv,
-        .progressCardsDiv
-        {
-            flex-wrap: wrap;
-            gap: 30px;
+    .index_progressSection .progress_BarCardsContainer,
+    .project_progressSection .progress_BarCardsContainer,
+    .project_progressSection .progress_StateCardsDiv
+    {
+        flex-wrap: wrap;
+        padding-left: 0;
+    }
 
-            .progressBarCard,
-            .progressCard
-            {
-                flex: 1 1 calc(50% - 30px);
-                width: auto;
-            }
-        }
+    // two cards per row
+    .index_progressSection .progress_BarCardsContainer .progress_barCard,
+    .project_progressSection .progress_BarCardsContainer .progress_barCard,
+    .project_progressSection .progress_StateCardsDiv .progressCard
+    {
+        flex: 1 1 40%;
     }
 }
+
 
 @media (max-width: 1024px)
 {
-    .index_progressSection
+    // stack "Current Project:" above the logo
+    .index_progressSection .progressSectionHeader,
+    .project_progressSection .progressSectionHeader
     {
-        .header
+        flex-direction: column;
+        align-items: flex-start;
+
+        p
         {
-            flex-wrap: wrap;
-            gap: 10px;
+            font-size: 32px;
+            margin-bottom: 0;
         }
 
-        .progressSectionHeader
+        .wayfarerGameLogo
         {
-            flex-direction: column;
-            align-items: flex-start;
-
-            p
-            {
-                font-size: 32px;
-                margin-bottom: 0;
-            }
-
-            .wayfarerGameLogo
-            {
-                width: 100%;
-                max-width: 455px;
-            }
+            width: 320px;
         }
     }
+
+    // lets "Learn More →" drop below if needed
+    .index_progressSection .header
+    {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
 }
+
 
 @media (max-width: 767px)
 {
+    .index_progressSection,
     .project_progressSection
     {
-        .progressSectionHeader
-        {
-            flex-direction: column;
-            align-items: flex-start;
-
-            p
-            {
-                font-size: 32px;
-                margin-bottom: 0;
-            }
-        }
-
-        .phasesDiv p,
-        .progressBarCardsDiv .progressBarCard p,
-        .progressCardsDiv .progressCard p
-        {
-            width: auto;
-            max-width: 50ch;
-        }
-
-        .progressBarCardsDiv .progressBarCard,
-        .progressCardsDiv .progressCard
-        {
-            flex-basis: 100%;
-        }
-
-        .progressBarCardsDiv .progressBarCard .progress_state .progressBarCardHeader
-        {
-            font-size: 26px;
-        }
+        padding-left: 16px;
+        padding-right: 16px;
     }
-}
 
-.project_progressSection
-{
-    .phasesDiv .phasesDivHeader { width: auto; }
-
-    .progressBarCardsDiv,
-    .progressCardsDiv
+    .index_progressSection .header
     {
-        gap: 30px;
-
-        .progressBarCard,
-        .progressCard
-        {
-            width: auto;
-            flex: 1 1 0;
-
-            p
-            {
-                width: auto;
-                max-width: 50ch;
-            }
-        }
+        flex-direction: column;
+        align-items: flex-start;
     }
-}
 
-@media (max-width: 1024px)
-{
-    .project_progressSection
+    .index_progressSection .progressSectionHeader p,
+    .project_progressSection .progressSectionHeader p
     {
-        .header
-        {
-            flex-wrap: wrap;
-            gap: 10px;
-        }
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
 
-        .progressSectionHeader
-        {
-            flex-direction: column;
-            align-items: flex-start;
+    .index_progressSection .progressSectionHeader .wayfarerGameLogo,
+    .project_progressSection .progressSectionHeader .wayfarerGameLogo
+    {
+        width: 240px;
+    }
 
-            p
-            {
-                font-size: 32px;
-                margin-bottom: 0;
-            }
+    // one card per row
+    .index_progressSection .progress_BarCardsContainer .progress_barCard,
+    .project_progressSection .progress_BarCardsContainer .progress_barCard,
+    .project_progressSection .progress_StateCardsDiv .progressCard
+    {
+        flex: 1 1 100%;
+    }
 
-            .wayfarerGameLogo
-            {
-                width: 100%;
-                max-width: 455px;
-            }
-        }
+    .project_progressSection .progress_StateCardsDiv
+    {
+        gap: 40px;
+        padding-bottom: 40px;
     }
 }
