@@ -17,4 +17,4 @@ function initApp()
     window.addEventListener("hashchange", changeRoute);
 }
 
-// initApp();
+initApp();

@@ -237,3 +237,68 @@
     }
 
 }
+
+@media (max-width: 1200px)
+{
+    .index_progressSection
+    {
+        padding: 25px 25px 50px;
+
+        .progress_BarCardsContainer
+        {
+            flex-wrap: wrap;
+            gap: 30px;
+            padding-left: 0;
+
+            .progress_barCard { flex: 1 1 calc(50% - 30px); }
+        }
+
+        .progress_StateCardsDiv
+        {
+            flex-wrap: wrap;
+            gap: 30px;
+
+            .progressCard
+            {
+                flex: 1 1 calc(50% - 30px);
+                width: auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px)
+{
+    .index_progressSection
+    {
+        .progressSectionHeader
+        {
+            flex-direction: column;
+            align-items: flex-start;
+
+            p
+            {
+                font-size: 32px;
+                margin-bottom: 0;
+            }
+        }
+
+        .phasesDiv p,
+        .progress_StateCardsDiv .progressCard p
+        {
+            width: auto;
+            max-width: 50ch;
+        }
+
+        .progress_BarCardsContainer .progress_barCard,
+        .progress_StateCardsDiv .progressCard
+        {
+            flex-basis: 100%;
+        }
+    }
+}
+
+.index_progressSection .phasesDiv .phasesDivHeader 
+{
+    width: auto; 
+}

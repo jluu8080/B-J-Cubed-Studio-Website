@@ -20,3 +20,17 @@
         color: #052F5F;
     }
 }
+
+@media (max-width: 1200px)
+{
+    .team_studioSection
+    {
+        padding: 0 25px 40px;
+
+        p
+        {
+            width: 100%;
+            max-width: 100ch;
+        }
+    }
+}

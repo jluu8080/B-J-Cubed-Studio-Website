@@ -65,3 +65,39 @@
         }
     }
 }
+
+@media (max-width: 1200px)
+{
+    .projectUpdatesSection
+    {
+        padding: 25px 25px 50px;
+
+        .progressUpdatesDiv
+        {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+    }
+}
+
+@media (max-width: 767px)
+{
+    .projectUpdatesSection .progressUpdatesDiv .progressUpdateCard
+    {
+        width: 100%;
+        max-width: 400px;
+
+        .progressUpdateImg,
+        .progressUpdateContent
+        {
+            width: 100%;
+        }
+    }
+}
+
+.projectUpdatesSection .progressUpdatesDiv
+{
+    flex-wrap: wrap;
+    gap: 30px;
+}

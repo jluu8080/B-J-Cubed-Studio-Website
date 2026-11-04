@@ -6,7 +6,6 @@
     align-items: center;
 
     padding-top:20px;
-    border-top:1px solid black;
 
     h1
     {
@@ -88,6 +87,52 @@
                     }
                 }
             }
+        }
+    }
+}
+
+@media (max-width: 1200px)
+{
+    .team_teamSection
+    {
+        padding: 20px 25px 0;
+
+        .teamMembersDiv
+        {
+            width: 100%;
+            max-width: 1000px;
+
+            .teamMember
+            {
+                .tmLeft { flex-shrink: 0; }
+
+                .tmRight
+                {
+                    width: auto;
+                    flex: 1;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px)
+{
+    .team_teamSection .teamMembersDiv .teamMember
+    {
+        flex-direction: column;
+
+        .tmLeft
+        {
+            width: 100%;
+            max-width: 300px;
+            margin-right: 0;
+        }
+
+        .tmRight .memberSocialLinks
+        {
+            flex-wrap: wrap;
+            gap: 10px 20px;
         }
     }
 }

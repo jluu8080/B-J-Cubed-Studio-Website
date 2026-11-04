@@ -1,7 +1,7 @@
 .index_teamSection
 {
 
-    // width:100%;
+    width:100%;
     min-height:240px;
 
     padding-left: 100px;
@@ -93,7 +93,9 @@
         justify-content: space-around;
 
         padding-bottom: 50px;
-        border-bottom:4px solid #005377;
+
+        //Add for later//
+        // border-bottom:4px solid #005377;
 
         .teamCard
         {
@@ -189,5 +191,34 @@
             }
 
         }
+    }
+}
+
+@media (max-width: 1200px)
+{
+    .index_teamSection
+    {
+        padding: 20px 25px 0;
+
+        .middleDiv { display: none; }
+
+        .teamCardsDiv
+        {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+        }
+    }
+}
+
+@media (max-width: 767px)
+{
+    .index_teamSection .teamCardsDiv .teamCard
+    {
+        width: 100%;
+        max-width: 400px;
+        min-height: auto;
+
+        .teamContent p { width: auto; }
     }
 }

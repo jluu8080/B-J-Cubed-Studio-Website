@@ -52,9 +52,42 @@
 
     .heroContent
     {
-        width:70ch;
+        max-width:70ch;
 
         color: #fff;
         font-size: 18px;
+    }
+}
+
+@media (max-width: 1200px)
+{
+    .index_heroSection
+    {
+        padding: 40px 25px;
+
+        .heroContent
+        {
+            width: auto;
+            max-width: 70ch;
+        }
+
+        .logoContainer .gameStudioLogo
+        {
+            max-width: 100%;
+        }
+    }
+}
+
+@media (max-width: 767px)
+{
+    .index_heroSection
+    {
+        .logoContainer .gameStudioLogo
+        {
+            width: 100%;
+            height: 100px;
+        }
+
+        .heroContent { font-size: 16px; }
     }
 }

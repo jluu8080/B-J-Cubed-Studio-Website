@@ -42,10 +42,6 @@ a {
   color: #F1A208;
 }
 
-section {
-  margin-bottom: 25px;
-}
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -65,6 +61,17 @@ section {
 @font-face {
   font-family: poppins-bold;
   src: url("../fonts/Poppins-Bold.ttf");
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .header {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 }
 header {
   background-color: #052F5F;
@@ -119,24 +126,21 @@ header nav .links a:hover {
   text-decoration-color: #fff;
 }
 
-@media (max-width: 767px) {
-  header {
-    align-items: flex-start;
-  }
+@media (max-width: 1024px) {
   header nav {
-    display: flex;
+    padding: 0 25px;
+  }
+}
+@media (max-width: 767px) {
+  header nav {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
-    padding: 0px !important;
-    padding-left: 25px !important;
+    padding: 15px 25px;
   }
-}
-@media (max-width: 1024px) {
-  header nav {
-    padding: 0px !important;
-    padding-left: 25px !important;
-    padding-right: 25px !important;
+  header nav .links {
+    flex-wrap: wrap;
+    gap: 10px 20px;
   }
 }
 .index_heroSection {
@@ -171,12 +175,34 @@ header nav .links a:hover {
   background-size: contain;
 }
 .index_heroSection .heroContent {
-  width: 70ch;
+  max-width: 70ch;
   color: #fff;
   font-size: 18px;
 }
 
+@media (max-width: 1200px) {
+  .index_heroSection {
+    padding: 40px 25px;
+  }
+  .index_heroSection .heroContent {
+    width: auto;
+    max-width: 70ch;
+  }
+  .index_heroSection .logoContainer .gameStudioLogo {
+    max-width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .index_heroSection .logoContainer .gameStudioLogo {
+    width: 100%;
+    height: 100px;
+  }
+  .index_heroSection .heroContent {
+    font-size: 16px;
+  }
+}
 .index_teamSection {
+  width: 100%;
   min-height: 240px;
   padding-left: 100px;
   padding-right: 100px;
@@ -235,7 +261,6 @@ header nav .links a:hover {
   display: flex;
   justify-content: space-around;
   padding-bottom: 50px;
-  border-bottom: 4px solid #005377;
 }
 .index_teamSection .teamCardsDiv .teamCard {
   width: 300px;
@@ -297,6 +322,29 @@ header nav .links a:hover {
   font-size: 14px;
 }
 
+@media (max-width: 1200px) {
+  .index_teamSection {
+    padding: 20px 25px 0;
+  }
+  .index_teamSection .middleDiv {
+    display: none;
+  }
+  .index_teamSection .teamCardsDiv {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .index_teamSection .teamCardsDiv .teamCard {
+    width: 100%;
+    max-width: 400px;
+    min-height: auto;
+  }
+  .index_teamSection .teamCardsDiv .teamCard .teamContent p {
+    width: auto;
+  }
+}
 .index_progressSection {
   padding-left: 100px;
   padding-right: 100px;
@@ -440,6 +488,50 @@ header nav .links a:hover {
   margin: 0;
 }
 
+@media (max-width: 1200px) {
+  .index_progressSection {
+    padding: 25px 25px 50px;
+  }
+  .index_progressSection .progress_BarCardsContainer {
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-left: 0;
+  }
+  .index_progressSection .progress_BarCardsContainer .progress_barCard {
+    flex: 1 1 calc(50% - 30px);
+  }
+  .index_progressSection .progress_StateCardsDiv {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .index_progressSection .progress_StateCardsDiv .progressCard {
+    flex: 1 1 calc(50% - 30px);
+    width: auto;
+  }
+}
+@media (max-width: 767px) {
+  .index_progressSection .progressSectionHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .index_progressSection .progressSectionHeader p {
+    font-size: 32px;
+    margin-bottom: 0;
+  }
+  .index_progressSection .phasesDiv p,
+  .index_progressSection .progress_StateCardsDiv .progressCard p {
+    width: auto;
+    max-width: 50ch;
+  }
+  .index_progressSection .progress_BarCardsContainer .progress_barCard,
+  .index_progressSection .progress_StateCardsDiv .progressCard {
+    flex-basis: 100%;
+  }
+}
+.index_progressSection .phasesDiv .phasesDivHeader {
+  width: auto;
+}
+
 .project_progressSection {
   padding-left: 100px;
   padding-right: 100px;
@@ -580,6 +672,86 @@ header nav .links a:hover {
   margin: 0;
 }
 
+@media (max-width: 1200px) {
+  .project_progressSection {
+    padding: 40px 25px 0;
+  }
+  .project_progressSection .progressBarCardsDiv,
+  .project_progressSection .progressCardsDiv {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .project_progressSection .progressBarCardsDiv .progressBarCard,
+  .project_progressSection .progressBarCardsDiv .progressCard,
+  .project_progressSection .progressCardsDiv .progressBarCard,
+  .project_progressSection .progressCardsDiv .progressCard {
+    flex: 1 1 calc(50% - 30px);
+    width: auto;
+  }
+}
+@media (max-width: 767px) {
+  .project_progressSection .progressSectionHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .project_progressSection .progressSectionHeader p {
+    font-size: 32px;
+    margin-bottom: 0;
+  }
+  .project_progressSection .phasesDiv p,
+  .project_progressSection .progressBarCardsDiv .progressBarCard p,
+  .project_progressSection .progressCardsDiv .progressCard p {
+    width: auto;
+    max-width: 50ch;
+  }
+  .project_progressSection .progressBarCardsDiv .progressBarCard,
+  .project_progressSection .progressCardsDiv .progressCard {
+    flex-basis: 100%;
+  }
+  .project_progressSection .progressBarCardsDiv .progressBarCard .progress_state .progressBarCardHeader {
+    font-size: 26px;
+  }
+}
+.project_progressSection .phasesDiv .phasesDivHeader {
+  width: auto;
+}
+.project_progressSection .progressBarCardsDiv,
+.project_progressSection .progressCardsDiv {
+  gap: 30px;
+}
+.project_progressSection .progressBarCardsDiv .progressBarCard,
+.project_progressSection .progressBarCardsDiv .progressCard,
+.project_progressSection .progressCardsDiv .progressBarCard,
+.project_progressSection .progressCardsDiv .progressCard {
+  width: auto;
+  flex: 1 1 0;
+}
+.project_progressSection .progressBarCardsDiv .progressBarCard p,
+.project_progressSection .progressBarCardsDiv .progressCard p,
+.project_progressSection .progressCardsDiv .progressBarCard p,
+.project_progressSection .progressCardsDiv .progressCard p {
+  width: auto;
+  max-width: 50ch;
+}
+
+@media (max-width: 1024px) {
+  .project_progressSection .header {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .project_progressSection .progressSectionHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .project_progressSection .progressSectionHeader p {
+    font-size: 32px;
+    margin-bottom: 0;
+  }
+  .project_progressSection .progressSectionHeader .wayfarerGameLogo {
+    width: 100%;
+    max-width: 455px;
+  }
+}
 .projectUpdatesSection {
   padding-left: 100px;
   padding-right: 100px;
@@ -622,13 +794,37 @@ header nav .links a:hover {
   color: #052F5F;
 }
 
+@media (max-width: 1200px) {
+  .projectUpdatesSection {
+    padding: 25px 25px 50px;
+  }
+  .projectUpdatesSection .progressUpdatesDiv {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .projectUpdatesSection .progressUpdatesDiv .progressUpdateCard {
+    width: 100%;
+    max-width: 400px;
+  }
+  .projectUpdatesSection .progressUpdatesDiv .progressUpdateCard .progressUpdateImg,
+  .projectUpdatesSection .progressUpdatesDiv .progressUpdateCard .progressUpdateContent {
+    width: 100%;
+  }
+}
+.projectUpdatesSection .progressUpdatesDiv {
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
 .team_teamSection {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 20px;
-  border-top: 1px solid black;
 }
 .team_teamSection h1 {
   margin-bottom: 40px;
@@ -684,6 +880,36 @@ header nav .links a:hover {
   background-color: orchid;
 }
 
+@media (max-width: 1200px) {
+  .team_teamSection {
+    padding: 20px 25px 0;
+  }
+  .team_teamSection .teamMembersDiv {
+    width: 100%;
+    max-width: 1000px;
+  }
+  .team_teamSection .teamMembersDiv .teamMember .tmLeft {
+    flex-shrink: 0;
+  }
+  .team_teamSection .teamMembersDiv .teamMember .tmRight {
+    width: auto;
+    flex: 1;
+  }
+}
+@media (max-width: 767px) {
+  .team_teamSection .teamMembersDiv .teamMember {
+    flex-direction: column;
+  }
+  .team_teamSection .teamMembersDiv .teamMember .tmLeft {
+    width: 100%;
+    max-width: 300px;
+    margin-right: 0;
+  }
+  .team_teamSection .teamMembersDiv .teamMember .tmRight .memberSocialLinks {
+    flex-wrap: wrap;
+    gap: 10px 20px;
+  }
+}
 .team_studioSection {
   display: flex;
   flex-direction: column;
@@ -700,18 +926,16 @@ header nav .links a:hover {
   color: #052F5F;
 }
 
-footer {
-  width: 100%;
-  display: flex;
-  padding-top: 10px;
-  padding-right: 100px;
-  padding-left: 100px;
-  background-color: #052F5F;
-  border-top: 4px solid #F1A208;
+@media (max-width: 1200px) {
+  .team_studioSection {
+    padding: 0 25px 40px;
+  }
+  .team_studioSection p {
+    width: 100%;
+    max-width: 100ch;
+  }
 }
-
 .footerLeftSection {
-  background-color: red;
   width: 25%;
   display: flex;
   align-items: center;
@@ -719,13 +943,13 @@ footer {
 .footerLeftSection .footer_studioLogo {
   width: 250px;
   height: 150px;
+  background-image: url("../images/studioLogo_Transparent_White.webp");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 
 .footerRightSection {
-  background-color: blue;
   width: 75%;
   display: flex;
   justify-content: space-between;
@@ -740,7 +964,7 @@ footer {
   display: flex;
   justify-content: flex-end;
   padding-top: 15px;
-  gap: 100px;
+  gap: 50px;
 }
 .footerRightSection .footerRightContent .socialsContainer {
   display: flex;
@@ -829,4 +1053,45 @@ footer {
 .footerRightSection .footerRightContent .pagesContainer .pageLinksList a {
   color: #F9F9F4;
   margin-bottom: 30px;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  padding-top: 10px;
+  padding-right: 100px;
+  padding-left: 100px;
+  background-color: #052F5F;
+  border-top: 4px solid #F1A208;
+}
+
+@media (max-width: 1200px) {
+  footer {
+    flex-direction: column;
+  }
+  .footerLeftSection, .footerRightSection {
+    width: 100%;
+  }
+  footer .footerLeftSection .footer_studioLogo {
+    flex-shrink: 0;
+  }
+  footer .footerRightSection .footerRightContent {
+    justify-content: space-between;
+    gap: 0;
+  }
+}
+@media (max-width: 1024px) {
+  footer {
+    padding: 10px 25px;
+  }
+}
+@media (max-width: 767px) {
+  footer .footerRightSection .footerRightContent {
+    flex-wrap: wrap;
+    gap: 30px 20px;
+  }
+  footer .footerRightSection .footerRightContent .copyRightContainer {
+    order: 3;
+    flex-basis: 100%;
+  }
 }

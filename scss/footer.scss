@@ -14,3 +14,54 @@ footer
 
     // color:#fff !important;
 }
+
+@media (max-width: 1200px)
+{
+    footer
+    {
+        flex-direction: column;
+    }
+
+    .footerLeftSection, .footerRightSection
+    {
+        width:100%;
+
+    }
+
+    footer .footerLeftSection
+    {
+        .footer_studioLogo
+        {
+            flex-shrink: 0;
+        }
+    }
+
+    footer .footerRightSection
+    {
+        .footerRightContent
+        {
+            justify-content: space-between;
+            gap:0;
+        }
+    }
+}
+
+@media (max-width: 1024px)
+{
+    footer { padding: 10px 25px; }
+}
+
+@media (max-width: 767px)
+{
+    footer .footerRightSection .footerRightContent
+    {
+        flex-wrap: wrap;
+        gap: 30px 20px;
+
+        .copyRightContainer
+        {
+            order: 3;
+            flex-basis: 100%;
+        }
+    }
+}
