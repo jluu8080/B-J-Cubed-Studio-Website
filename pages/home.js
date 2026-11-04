@@ -16,7 +16,7 @@ export default
         <div class="gameStudioLogo"></div>
     </div>
 
-    <p class="heroContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore repellendus deserunt adipisci. Earum vel facilis quaerat eligendi aperiam illo natus corporis unde corrupti, deleniti perferendis, animi, recusandae voluptatibus explicabo error.</p>
+    <p class="heroContent">B&J³ Games is a small, independent board game studio made up of four creators: Ben Fox, Jacob Fox, Julian Banks, and Jason Luu. The studio brings together game design, writing, art, and programming to create tabletop experiences.</p>
 
     
 </section>
@@ -24,7 +24,7 @@ export default
 
 <section class="index_teamSection">
     <div class="header">
-        <h1>Meet The Team</h1>
+        <p>Meet The Team</p>
         <a href="#team">Learn More →</a>
     </div>
 
@@ -53,7 +53,7 @@ export default
                     <p class="subRoles">Game Designer • Game Writer • Play Tester</p>
                 </div>
                 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium sit, eaque illo deserunt laudantium soluta ducimus possimus fuga inventore sapiente architecto autem est earum maxime obcaecati labore sequi consectetur impedit?</p>
+                <p>Coming Soon...</p>
             </div>
         </div>
 
@@ -70,7 +70,7 @@ export default
                 </div>
 
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium sit, eaque illo deserunt laudantium soluta ducimus possimus fuga inventore sapiente architecto autem est earum maxime obcaecati labore sequi consectetur impedit?</p>
+                <p>Coming Soon...</p>
             </div>
         </div>
 
@@ -86,7 +86,7 @@ export default
                     <p class="subRoles">Game Writer • Play Tester • Marketer</p>
                 </div>
                 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium sit, eaque illo deserunt laudantium soluta ducimus possimus fuga inventore sapiente architecto autem est earum maxime obcaecati labore sequi consectetur impedit?</p>
+                <p>Coming Soon...</p>
             </div>
         </div>
 
@@ -103,7 +103,7 @@ export default
                 </div>
 
                 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium sit, eaque illo deserunt laudantium soluta ducimus possimus fuga inventore sapiente architecto autem est earum maxime obcaecati labore sequi consectetur impedit?</p>
+                <p>Coming Soon...</p>
             </div>
         </div>
     </div>
@@ -124,7 +124,7 @@ export default
 
     <div class="phasesDiv">
         <p class="phasesDivHeader">Phases</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, consectetur ducimus explicabo ea velit atque perspiciatis ratione dignissimos beatae vel ipsa suscipit nisi molestiae eum porro nulla tempora omnis enim?</p>
+        <p>Every game starts as an idea, but turning it into something people can sit down and play takes time, testing, and a lot of revisions. At B&J³ Games, we build Wayfarer in phases, so each step gives us a solid foundation for the next. Here's where we've been and where we're headed.</p>
     </div>
 
     <h1>Our Progress:</h1>
@@ -145,24 +145,41 @@ export default
                 </div>
             </div>
 
-            <p class="progress_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, omnis hic aliquid cum sit nesciunt voluptatem! Minus esse dolor molestiae, magni vel corrupti laudantium tenetur, praesentium ipsam non et reiciendis!</p>
+            <p class="progress_desc">We defined Wayfarer's core idea, finalized its name, and assigned roles across the team.</p>
         </div>
 
         <div class="progress_barCard">
 
             <div class="progressTrack isActive">
-                <div class="progressFill isActive"></div>
+                <div class="progressFill isCompleted"></div>
             </div>
 
             <div class="progress_barCard_Header">
                 <p class="header">Beta Build</p>
+
+                <div class="state finished">
+                    <p>FINISHED</p>
+                </div>
+            </div>
+
+            <p class="progress_desc">We built the first gameplay loop and character sheet, then put core mechanics like time, movement, exhaustion, inventory, and food and water to the test.</p>
+        </div>
+
+        <div class="progress_barCard">
+
+            <div class="progressTrack isActive">
+                <div class="progressFill"></div>
+            </div>
+
+            <div class="progress_barCard_Header">
+                <p class="header">Prime</p>
 
                 <div class="state current">
                     <p>CURRENT</p>
                 </div>
             </div>
 
-            <p class="progress_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, omnis hic aliquid cum sit nesciunt voluptatem! Minus esse dolor molestiae, magni vel corrupti laudantium tenetur, praesentium ipsam non et reiciendis!</p>
+            <p class="progress_desc">With a playable beta build in hand, we're refining balance, polishing the rules, and building out the companion app and website</p>
         </div>
 
         <div class="progress_barCard">
@@ -172,31 +189,14 @@ export default
             </div>
 
             <div class="progress_barCard_Header">
-                <p class="header">Redacted</p>
-
-                <div class="state future">
-                    <p>UP NEXT</p>
-                </div>
-            </div>
-
-            <p class="progress_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, omnis hic aliquid cum sit nesciunt voluptatem! Minus esse dolor molestiae, magni vel corrupti laudantium tenetur, praesentium ipsam non et reiciendis!</p>
-        </div>
-
-        <div class="progress_barCard">
-
-            <div class="progressTrack">
-                <div class="progressFill"></div>
-            </div>
-
-            <div class="progress_barCard_Header">
-                <p class="header">Launch</p>
+                <p class="header">Redeacted</p>
 
                 <div class="state">
                     <p></p>
                 </div>
             </div>
 
-            <p class="progress_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, omnis hic aliquid cum sit nesciunt voluptatem! Minus esse dolor molestiae, magni vel corrupti laudantium tenetur, praesentium ipsam non et reiciendis!</p>
+            <p class="progress_desc">Redacted</p>
         </div>
 
     </div>

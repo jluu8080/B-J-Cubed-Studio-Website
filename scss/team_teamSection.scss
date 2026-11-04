@@ -7,6 +7,15 @@
 
     padding-top:20px;
 
+    .sectionHeader
+    {
+        margin-bottom: 40px;
+
+        color: #052F5F;
+        font-size: 45px;
+        font-weight: bolder;
+    }
+
     h1
     {
         margin-bottom:40px;
@@ -25,6 +34,13 @@
             padding-top:20px;
             padding-bottom:20px;
             border-bottom:1px solid black;
+
+            .teamMem_name
+            {
+                font-size: 28px;
+                font-weight: bold;
+                margin:0;
+            }
 
             .tmLeft
             {
@@ -48,20 +64,6 @@
             {
                 width:600px;
                 // background-color:aquamarine;
-
-                .teamMem_name
-                {
-                    margin:0;
-                    font-size: 30px;
-                    font-weight: bold;
-                }
-
-                .role
-                {
-                    margin-top: 5px;
-                    font-size: 14px;
-                    letter-spacing: 2px;
-                }
 
                 .memberSocialLinks
                 {

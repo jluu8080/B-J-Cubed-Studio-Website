@@ -91,9 +91,48 @@
                     p
                     {
                         text-align: center;
-                        margin-top: 5px;
+                        margin-top: 1px;
                         margin-left: 10px;
                     }
+                }
+            }
+        }
+
+        .pagesContainer
+        {
+            // background-color: red;
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            // margin-top:25px;
+
+            .pageLinkHeader
+            {
+                p
+                {
+                    color: #F1A208;
+                    font-weight: bold;
+                    font-size: 16px;
+                    letter-spacing: 2px;
+
+                    padding-bottom: 10px;
+                    border-bottom: 3px solid #005377;
+                }
+            }
+
+            .pageLinksList
+            {
+                // background-color: red;
+                height: 125px;
+                display:flex;
+                justify-content: space-between;
+                flex-direction: column;
+
+                a
+                {
+                    color:#F9F9F4;
+                    
+                    // margin-bottom:3px;
                 }
             }
         }
@@ -132,40 +171,5 @@
             }
         }
 
-        .pagesContainer
-        {
-            // background-color: red;
-            display: flex;
-            flex-direction: column;
-            // justify-content: center;
-            // margin-top:25px;
-
-            .pageLinkHeader
-            {
-                p
-                {
-                    color: #F1A208;
-                    font-weight: bold;
-                    font-size: 16px;
-                    letter-spacing: 2px;
-
-                    padding-bottom: 10px;
-                    border-bottom: 3px solid #005377;
-                }
-            }
-
-            .pageLinksList
-            {
-                display:flex;
-                flex-direction: column;
-
-                a
-                {
-                    color:#F9F9F4;
-                    
-                    margin-bottom:30px;
-                }
-            }
-        }
     }
 }

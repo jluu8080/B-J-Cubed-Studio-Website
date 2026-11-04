@@ -5,153 +5,98 @@ export default
         
         <div class="progressSectionHeader">
             <p>Current Project:</p>
+            
             <img src="images/WayfarerStainedLogosvg.svg" class="wayfarerGameLogo">
         </div>
+        
+        
+        <a href="#projects">Learn More →</a>
     </div>
 
     <div class="phasesDiv">
         <p class="phasesDivHeader">Phases</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, consectetur ducimus explicabo ea velit atque perspiciatis ratione dignissimos beatae vel ipsa suscipit nisi molestiae eum porro nulla tempora omnis enim?</p>
+        <p>Every game starts as an idea, but turning it into something people can sit down and play takes time, testing, and a lot of revisions. At B&J³ Games, we build Wayfarer in phases, so each step gives us a solid foundation for the next. Here's where we've been and where we're headed.</p>
     </div>
 
-    <h1>Our Progress</h1>
+    <h1>Our Progress:</h1>
 
-    <div class="progressBarCardsDiv">
+    <div class="progress_BarCardsContainer">
 
-        <div class="progressBarCard">
+        <div class="progress_barCard">
 
-            <div class="progressBarHolder current">
-                <div class="progressBar current"></div>
+            <div class="progressTrack isActive">
+                <div class="progressFill isCompleted"></div>
             </div>
 
-            <div class="progress_state">
-                <p class="progressBarCardHeader">Alpha Build</p>
+            <div class="progress_barCard_Header">
+                <p class="header">Alpha Build</p>
+
+                <div class="state finished">
+                    <p>FINISHED</p>
+                </div>
             </div>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, omnis hic aliquid cum sit nesciunt voluptatem! Minus esse dolor molestiae, magni vel corrupti laudantium tenetur, praesentium ipsam non et reiciendis!</p>
+            <p class="progress_desc">We defined Wayfarer's core idea, finalized its name, and assigned roles across the team.</p>
         </div>
 
-        <div class="progressBarCard">
-            <div class="progressBarHolder">
-                <div class="progressBar"></div>
+        <div class="progress_barCard">
+
+            <div class="progressTrack isActive">
+                <div class="progressFill isCompleted"></div>
             </div>
 
-            <div class="progress_state">
-                <p class="progressBarCardHeader">Redacted</p>
+            <div class="progress_barCard_Header">
+                <p class="header">Beta Build</p>
 
-                <div class="stateDiv">
-                    <p>Current</p>
+                <div class="state finished">
+                    <p>FINISHED</p>
                 </div>
             </div>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, omnis hic aliquid cum sit nesciunt voluptatem! Minus esse dolor molestiae, magni vel corrupti laudantium tenetur, praesentium ipsam non et reiciendis!</p>
+            <p class="progress_desc">We built the first gameplay loop and character sheet, then put core mechanics like time, movement, exhaustion, inventory, and food and water to the test.</p>
         </div>
 
-        <div class="progressBarCard">
-            <div class="progressBarHolder">
-                <div class="progressBar"></div>
+        <div class="progress_barCard">
+
+            <div class="progressTrack isActive">
+                <div class="progressFill"></div>
             </div>
 
-            <div class="progress_state">
-                <p class="progressBarCardHeader">Redacted</p>
+            <div class="progress_barCard_Header">
+                <p class="header">Prime</p>
+
+                <div class="state current">
+                    <p>CURRENT</p>
+                </div>
             </div>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, omnis hic aliquid cum sit nesciunt voluptatem! Minus esse dolor molestiae, magni vel corrupti laudantium tenetur, praesentium ipsam non et reiciendis!</p>
+            <p class="progress_desc">With a playable beta build in hand, we're refining balance, polishing the rules, and building out the companion app and website</p>
         </div>
 
-        <div class="progressBarCard">
-            <div class="progressBarHolder">
-                <div class="progressBar"></div>
+        <div class="progress_barCard">
+
+            <div class="progressTrack">
+                <div class="progressFill"></div>
             </div>
 
-            <div class="progress_state">
-                <p class="progressBarCardHeader">Launch</p>
+            <div class="progress_barCard_Header">
+                <p class="header">Redeacted</p>
+
+                <div class="state">
+                    <p></p>
+                </div>
             </div>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, omnis hic aliquid cum sit nesciunt voluptatem! Minus esse dolor molestiae, magni vel corrupti laudantium tenetur, praesentium ipsam non et reiciendis!</p>
+            <p class="progress_desc">Redacted</p>
         </div>
 
-    </div>
-
-    <div class="progressCardsDiv">
-        <div class="progressCard finished_border-color">
-            <h2>Finished</h2>
-
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet omnis eligendi, accusamus tempora iste tempore? Esse placeat ad blanditiis aut nobis, odit cupiditate voluptas, ipsa corporis nemo alias! Iure, in.</p>
-
-            <div class="progressCardContent">
-                <div class="progressCardItem">
-                    <h3>Movement</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, est, voluptatibus veritatis vero impedit commodi non quidem excepturi magni facilis earum minima accusamus obcaecati illum maiores aspernatur ad harum rem?</p>
-                </div>
-
-                <div class="progressCardItem">
-                    <h3>Movement</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, est, voluptatibus veritatis vero impedit commodi non quidem excepturi magni facilis earum minima accusamus obcaecati illum maiores aspernatur ad harum rem?</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="progressCard now_border-color">
-            <h2>Now</h2>
-
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet omnis eligendi, accusamus tempora iste tempore? Esse placeat ad blanditiis aut nobis, odit cupiditate voluptas, ipsa corporis nemo alias! Iure, in.</p>
-
-            <div class="progressCardContent">
-                <div class="progressCardItem">
-                    <h3>Movement</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, est, voluptatibus veritatis vero impedit commodi non quidem excepturi magni facilis earum minima accusamus obcaecati illum maiores aspernatur ad harum rem?</p>
-                </div>
-
-                <div class="progressCardItem">
-                    <h3>Movement</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, est, voluptatibus veritatis vero impedit commodi non quidem excepturi magni facilis earum minima accusamus obcaecati illum maiores aspernatur ad harum rem?</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="progressCard next_border-color">
-            <h2>Next</h2>
-
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet omnis eligendi, accusamus tempora iste tempore? Esse placeat ad blanditiis aut nobis, odit cupiditate voluptas, ipsa corporis nemo alias! Iure, in.</p>
-
-            <div class="progressCardContent">
-                <div class="progressCardItem">
-                    <h3>Movement</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, est, voluptatibus veritatis vero impedit commodi non quidem excepturi magni facilis earum minima accusamus obcaecati illum maiores aspernatur ad harum rem?</p>
-                </div>
-
-                <div class="progressCardItem">
-                    <h3>Movement</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, est, voluptatibus veritatis vero impedit commodi non quidem excepturi magni facilis earum minima accusamus obcaecati illum maiores aspernatur ad harum rem?</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="progressCard later_border-color">
-            <h2>Later</h2>
-
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet omnis eligendi, accusamus tempora iste tempore? Esse placeat ad blanditiis aut nobis, odit cupiditate voluptas, ipsa corporis nemo alias! Iure, in.</p>
-
-            <div class="progressCardContent">
-                <div class="progressCardItem">
-                    <h3>Movement</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, est, voluptatibus veritatis vero impedit commodi non quidem excepturi magni facilis earum minima accusamus obcaecati illum maiores aspernatur ad harum rem?</p>
-                </div>
-
-                <div class="progressCardItem">
-                    <h3>Movement</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, est, voluptatibus veritatis vero impedit commodi non quidem excepturi magni facilis earum minima accusamus obcaecati illum maiores aspernatur ad harum rem?</p>
-                </div>
-            </div>
-        </div>
     </div>
 </section>
 
 <section class="projectUpdatesSection">
     <h1>Progress Updates</h1>
 
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas atque voluptatibus sit velit exercitationem maxime corporis facere explicabo obcaecati! Itaque animi fugiat nisi corrupti similique maiores, repellat incidunt reprehenderit exercitationem!</p>
+    <p>Making a board game is a journey of its own, and we want you along for the ride. Our progress updates take you behind the scenes of our project's development, from early ideas and first playtests to new features and design changes. Check back here for the latest news from the B&J³ Games team.</p>
 
     <div class="progressUpdatesDiv">
         <div class="progressUpdateCard">

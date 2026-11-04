@@ -33,6 +33,17 @@ header
             justify-content: space-between;
             align-items: center;
 
+            .logoImg
+            {
+                width:200px;
+                height: 80px;
+
+                background-image: url("../images/studioLogo_Transparent_White.webp");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+
             #logoName
             {
 
@@ -70,9 +81,9 @@ header
         {
             // width:200px;
 
+            margin-top:20px;
             display:flex;
             justify-content: space-between;
-            // align-items: center;
 
             // background-color:aquamarine;
 

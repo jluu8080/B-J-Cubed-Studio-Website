@@ -1,41 +1,45 @@
 export default 
 `
 <section class="team_teamSection">
-    <h1>Meet The Team</h1>
+    <p class="sectionHeader">Meet The Team</p>
 
     <div class="teamMembersDiv">
         <div class="teamMember">
 
             <!-- Background Image for the Team Member pfp -->
-            <div class="tmLeft">Image</div>
+            <div class="tmLeft">Coming Soon</div>
 
             <div class="tmRight">
                 <p class="teamMem_name">Ben Fox</p>
                 
-                <p class="role ben_textColor" >PRESIDENT</p>
+                <div class="rolesContainer">
+                    <p class="mainRole ben_textColor">PRESIDENT</p>
+
+                    <p class="subRoles">Game Designer • Game Writer • Play Tester</p>
+                </div>
                 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nam reprehenderit quos neque maxime laboriosam, sint odit a mollitia vero veniam, iure suscipit. Deleniti reiciendis iusto dignissimos! Explicabo, voluptatum soluta.</p>
+                <p>Coming Soon</p>
 
                 <div class="memberSocialLinks">
                     <div class="link">
                         <a href="#">
                             <div class="socialLinkImg"></div>
                         </a>
-                        <p>asdasdasd</p>
+                        <p>Coming Soon</p>
                     </div>
 
                     <div class="link">
                         <a href="#">
                             <div class="socialLinkImg"></div>
                         </a>
-                        <p>sadasdsad</p>
+                        <p>Coming Soon</p>
                     </div>
 
                     <div class="link">
                         <a href="#">
                             <div class="socialLinkImg"></div>
                         </a>
-                        <p>asdsadasd</p>
+                        <p>Coming Soon</p>
                     </div>
                 </div>
 
@@ -46,35 +50,39 @@ export default
         <div class="teamMember">
 
             <!-- Background Image for the Team Member pfp -->
-            <div class="tmLeft">Image</div>
+            <div class="tmLeft">Coming Soon</div>
 
             <div class="tmRight">
                 <p class="teamMem_name">Jacob Fox</p>
                 
-                <p class="role ben_textColor" >GAME DESIGNER</p>
+                <div class="rolesContainer">
+                    <p class="mainRole jacob_textColor">GAME DESIGNER</p>
+
+                    <p class="subRoles">Game Writer • Play Tester</p>
+                </div>
                 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nam reprehenderit quos neque maxime laboriosam, sint odit a mollitia vero veniam, iure suscipit. Deleniti reiciendis iusto dignissimos! Explicabo, voluptatum soluta.</p>
+                <p>Coming Soon.</p>
 
                 <div class="memberSocialLinks">
                     <div class="link">
                         <a href="#">
                             <div class="socialLinkImg"></div>
                         </a>
-                        <p>asdasdasd</p>
+                        <p>Coming Soon</p>
                     </div>
 
                     <div class="link">
                         <a href="#">
                             <div class="socialLinkImg"></div>
                         </a>
-                        <p>sadasdsad</p>
+                        <p>Coming Soon</p>
                     </div>
 
                     <div class="link">
                         <a href="#">
                             <div class="socialLinkImg"></div>
                         </a>
-                        <p>asdsadasd</p>
+                        <p>Coming Soon</p>
                     </div>
                 </div>
 
@@ -85,35 +93,39 @@ export default
         <div class="teamMember">
 
             <!-- Background Image for the Team Member pfp -->
-            <div class="tmLeft">Image</div>
+            <div class="tmLeft">Coming Soon</div>
 
             <div class="tmRight">
                 <p class="teamMem_name">Julian Banks</p>
                 
-                <p class="role ben_textColor" >GAME DESIGNER</p>
+                <div class="rolesContainer">
+                    <p class="mainRole julian_textColor">GAME DESIGNER</p>
+
+                    <p class="subRoles">Game Writer • Play Tester • Marketer</p>
+                </div>
                 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nam reprehenderit quos neque maxime laboriosam, sint odit a mollitia vero veniam, iure suscipit. Deleniti reiciendis iusto dignissimos! Explicabo, voluptatum soluta.</p>
+                <p>Coming Soon</p>
 
                 <div class="memberSocialLinks">
                     <div class="link">
                         <a href="#">
                             <div class="socialLinkImg"></div>
                         </a>
-                        <p>asdasdasd</p>
+                        <p>Coming Soon</p>
                     </div>
 
                     <div class="link">
                         <a href="#">
                             <div class="socialLinkImg"></div>
                         </a>
-                        <p>sadasdsad</p>
+                        <p>Coming Soon</p>
                     </div>
 
                     <div class="link">
                         <a href="#">
                             <div class="socialLinkImg"></div>
                         </a>
-                        <p>asdsadasd</p>
+                        <p>Coming Soon</p>
                     </div>
                 </div>
 
@@ -124,35 +136,39 @@ export default
         <div class="teamMember">
 
             <!-- Background Image for the Team Member pfp -->
-            <div class="tmLeft">Image</div>
+            <div class="tmLeft">Coming Soon</div>
 
             <div class="tmRight">
                 <p class="teamMem_name">Jason Luu</p>
                 
-                <p class="role ben_textColor" >PROGRAMMER</p>
+                <div class="rolesContainer">
+                    <p class="mainRole jason_textColor">PROGRAMMER</p>
+
+                    <p class="subRoles">UI/UX Designer • Game Designer • <br>Play Tester • Marketer</p>
+                </div>
                 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nam reprehenderit quos neque maxime laboriosam, sint odit a mollitia vero veniam, iure suscipit. Deleniti reiciendis iusto dignissimos! Explicabo, voluptatum soluta.</p>
+                <p>Coming Soon</p>
 
                 <div class="memberSocialLinks">
                     <div class="link">
                         <a href="#">
                             <div class="socialLinkImg"></div>
                         </a>
-                        <p>asdasdasd</p>
+                        <p>Coming Soon</p>
                     </div>
 
                     <div class="link">
                         <a href="#">
                             <div class="socialLinkImg"></div>
                         </a>
-                        <p>sadasdsad</p>
+                        <p>Coming Soon</p>
                     </div>
 
                     <div class="link">
                         <a href="#">
                             <div class="socialLinkImg"></div>
                         </a>
-                        <p>asdsadasd</p>
+                        <p>Coming Soon</p>
                     </div>
                 </div>
 
@@ -168,9 +184,11 @@ export default
     <img src="images/heroImage.webp">
 
     <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus vitae sapiente corrupti illo. Quas maxime odit accusamus fuga laborum aliquam repellat, corporis, cum neque similique corrupti, ducimus nobis esse blanditiis?
-        Nostrum at, explicabo nihil asperiores saepe deserunt repellat laborum commodi architecto fuga sapiente vitae amet, voluptatibus, expedita enim eum soluta a laboriosam! Voluptatibus minus sint architecto quia fugit iste est?
-        Officia, assumenda. Laboriosam suscipit voluptatibus perspiciatis non, obcaecati harum nostrum magnam sapiente pariatur! Amet corporis saepe, expedita quis, corrupti porro inventore, alias facere ducimus at illo labore ullam itaque iusto.
+        B&J³ Games is a small, independent board game studio made up of four creators: Ben Fox, Jacob Fox, Julian Banks, and Jason Luu. Founded as part of our N443 course at IU Indianapolis, the studio brings together game design, writing, art, and programming to create tabletop experiences.<br><br>
+
+        Every member of the team plays a part in shaping it, from designing mechanics and writing the world to creating the art, building the digital tools, and playtesting every step of the way. <br><br>
+
+        We believe the best games are built in the open, so we share our progress as we go. Follow along on BlueSky, X, and Instagram, or check back here for updates.<br><br>
     </p>
 </section>
 `;

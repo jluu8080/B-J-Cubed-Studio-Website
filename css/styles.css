@@ -42,6 +42,23 @@ a {
   color: #F1A208;
 }
 
+.rolesContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.rolesContainer .mainRole {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+.rolesContainer .subRoles {
+  width: 100%;
+  color: #555;
+  font-size: 14px;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -99,6 +116,14 @@ header nav .logoDiv {
   justify-content: space-between;
   align-items: center;
 }
+header nav .logoDiv .logoImg {
+  width: 200px;
+  height: 80px;
+  background-image: url("../images/studioLogo_Transparent_White.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 header nav .logoDiv #logoName {
   display: flex;
   align-items: center;
@@ -114,6 +139,7 @@ header nav .logoDiv p {
   text-align: center;
 }
 header nav .links {
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
   gap: 25px;
@@ -169,7 +195,7 @@ header nav .links a:hover {
 .index_heroSection .logoContainer .gameStudioLogo {
   width: 400px;
   height: 150px;
-  background-image: url("../images/studioLogo_wizardsLizards.webp");
+  background-image: url("../images/studioLogo_Transparent_White.webp");
   background-position: left;
   background-repeat: no-repeat;
   background-size: contain;
@@ -208,14 +234,15 @@ header nav .links a:hover {
   padding-right: 100px;
   padding-top: 20px;
 }
-.index_teamSection a {
+.index_teamSection .header a {
   font-size: 18px;
 }
-.index_teamSection a:hover {
+.index_teamSection .header a:hover {
   color: lightblue;
 }
-.index_teamSection h1 {
+.index_teamSection .header p {
   color: #052F5F;
+  font-size: 45px;
   font-weight: bolder;
 }
 .index_teamSection .middleDiv {
@@ -261,6 +288,7 @@ header nav .links a:hover {
   display: flex;
   justify-content: space-around;
   padding-bottom: 50px;
+  border-bottom: 4px solid #005377;
 }
 .index_teamSection .teamCardsDiv .teamCard {
   width: 300px;
@@ -305,22 +333,6 @@ header nav .links a:hover {
 .index_teamSection .teamCardsDiv .teamCard .teamContent p {
   width: 30ch;
 }
-.index_teamSection .teamCardsDiv .teamCard .teamContent .rolesContainer {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.index_teamSection .teamCardsDiv .teamCard .teamContent .rolesContainer .mainRole {
-  margin: 0;
-  margin-bottom: 5px;
-  font-size: 16px;
-  letter-spacing: 2px;
-}
-.index_teamSection .teamCardsDiv .teamCard .teamContent .rolesContainer .subRoles {
-  width: 100%;
-  color: #555;
-  font-size: 14px;
-}
 
 @media (max-width: 1200px) {
   .index_teamSection {
@@ -352,6 +364,9 @@ header nav .links a:hover {
   padding-bottom: 50px;
   border-bottom: transparent !important;
 }
+.index_progressSection h1 {
+  color: #052F5F;
+}
 .index_progressSection .progressSectionHeader {
   display: flex;
   align-items: center;
@@ -377,7 +392,7 @@ header nav .links a:hover {
 }
 .index_progressSection .phasesDiv p {
   margin: 0;
-  width: 50ch;
+  max-width: 100ch;
 }
 .index_progressSection .progress_BarCardsContainer {
   width: 100%;
@@ -386,6 +401,9 @@ header nav .links a:hover {
   gap: 15px;
   margin-bottom: 40px;
   padding-left: 6px;
+}
+.index_progressSection .progress_BarCardsContainer .progress_barCard {
+  width: 400px;
 }
 .index_progressSection .progress_BarCardsContainer .progress_barCard .progressTrack {
   width: 100%;
@@ -420,6 +438,7 @@ header nav .links a:hover {
 .index_progressSection .progress_BarCardsContainer .progress_barCard .progress_barCard_Header .header {
   font-size: 22px;
   font-family: poppins-bold !important;
+  color: #052F5F;
 }
 .index_progressSection .progress_BarCardsContainer .progress_barCard .progress_barCard_Header .state {
   height: 25px;
@@ -535,7 +554,12 @@ header nav .links a:hover {
 .project_progressSection {
   padding-left: 100px;
   padding-right: 100px;
-  padding-top: 50px;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  border-bottom: transparent !important;
+}
+.project_progressSection h1 {
+  color: #052F5F;
 }
 .project_progressSection .progressSectionHeader {
   display: flex;
@@ -562,113 +586,118 @@ header nav .links a:hover {
 }
 .project_progressSection .phasesDiv p {
   margin: 0;
-  width: 50ch;
+  max-width: 100ch;
 }
-.project_progressSection .progressBarCardsDiv {
+.project_progressSection .progress_BarCardsContainer {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  gap: 15px;
   margin-bottom: 40px;
+  padding-left: 6px;
 }
-.project_progressSection .progressBarCardsDiv .progressBarCard {
+.project_progressSection .progress_BarCardsContainer .progress_barCard {
   width: 400px;
-  min-height: 150px;
 }
-.project_progressSection .progressBarCardsDiv .progressBarCard h2 {
-  margin-top: 25px;
-  color: #052F5F;
-}
-.project_progressSection .progressBarCardsDiv .progressBarCard .progress_state {
-  display: flex;
-  align-items: center;
-}
-.project_progressSection .progressBarCardsDiv .progressBarCard .progress_state .progressBarCardHeader {
-  width: fit-content;
-  margin-top: 25px;
-  font-size: 32px;
-  font-weight: bold;
-}
-.project_progressSection .progressBarCardsDiv .progressBarCard .progress_state .stateDiv {
-  width: 95px;
-  height: fit-content;
-  margin-top: 10px;
-  margin-left: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #fff;
-  border: 2px solid #052F5F;
-  border-radius: 10px;
-}
-.project_progressSection .progressBarCardsDiv .progressBarCard .progress_state .stateDiv p {
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  font-size: 20px;
-  letter-spacing: 1px;
-}
-.project_progressSection .progressBarCardsDiv .progressBarCard .progressBarHolder {
+.project_progressSection .progress_BarCardsContainer .progress_barCard .progressTrack {
   width: 100%;
   height: 20px;
   margin-bottom: 10px;
   border-radius: 5px;
   background-color: #052F5F;
 }
-.project_progressSection .progressBarCardsDiv .progressBarCard .progressBarHolder.current {
+.project_progressSection .progress_BarCardsContainer .progress_barCard .progressTrack.isActive {
   outline: 2px solid black;
   outline-offset: 2px;
 }
-.project_progressSection .progressBarCardsDiv .progressBarCard .progressBarHolder .progressBar {
+.project_progressSection .progress_BarCardsContainer .progress_barCard .progressTrack .progressFill {
   height: 20px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
-.project_progressSection .progressBarCardsDiv .progressBarCard .progressBarHolder .progressBar.current {
+.project_progressSection .progress_BarCardsContainer .progress_barCard .progressTrack .progressFill.isActive {
   width: 15%;
   background-color: #F1A208;
 }
-.project_progressSection .progressBarCardsDiv .progressBarCard p {
-  width: 50ch;
-}
-.project_progressSection .progressCardsDiv {
+.project_progressSection .progress_BarCardsContainer .progress_barCard .progressTrack .progressFill.isCompleted {
   width: 100%;
+  background-color: #06A77D;
+  border-radius: 5px !important;
+}
+.project_progressSection .progress_BarCardsContainer .progress_barCard .progress_barCard_Header {
+  margin-top: 25px;
+  display: flex;
+  gap: 10px;
+}
+.project_progressSection .progress_BarCardsContainer .progress_barCard .progress_barCard_Header .header {
+  font-size: 22px;
+  font-family: poppins-bold !important;
+  color: #052F5F;
+}
+.project_progressSection .progress_BarCardsContainer .progress_barCard .progress_barCard_Header .state {
+  height: 25px;
+  margin-top: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.project_progressSection .progress_BarCardsContainer .progress_barCard .progress_barCard_Header .state.current {
+  background-color: #F1A208;
+  color: #FFF;
+}
+.project_progressSection .progress_BarCardsContainer .progress_barCard .progress_barCard_Header .state.finished {
+  background-color: #06A77D;
+  color: #FFF;
+}
+.project_progressSection .progress_BarCardsContainer .progress_barCard .progress_barCard_Header .state.future {
+  background-color: #989898;
+  color: #fff;
+}
+.project_progressSection .progress_BarCardsContainer .progress_barCard .progress_barCard_Header .state p {
+  margin: 0;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.project_progressSection .progress_StateCardsDiv {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 80px;
-  border-bottom: 4px solid #005377;
 }
-.project_progressSection .progressCardsDiv .finished_border-color {
+.project_progressSection .progress_StateCardsDiv .finished_border-color {
   border-top: 5px solid #06A77D !important;
 }
-.project_progressSection .progressCardsDiv .now_border-color {
+.project_progressSection .progress_StateCardsDiv .now_border-color {
   border-top: 5px solid #F1A208 !important;
 }
-.project_progressSection .progressCardsDiv .next_border-color {
+.project_progressSection .progress_StateCardsDiv .next_border-color {
   border-top: 5px solid #052F5F !important;
 }
-.project_progressSection .progressCardsDiv .later_border-color {
+.project_progressSection .progress_StateCardsDiv .later_border-color {
   border-top: 5px solid gray !important;
 }
-.project_progressSection .progressCardsDiv .progressCard {
+.project_progressSection .progress_StateCardsDiv .progressCard {
   width: 400px;
 }
-.project_progressSection .progressCardsDiv .progressCard h2 {
+.project_progressSection .progress_StateCardsDiv .progressCard h2 {
   margin: 0;
   margin-top: 10px;
 }
-.project_progressSection .progressCardsDiv .progressCard p {
+.project_progressSection .progress_StateCardsDiv .progressCard p {
   width: 50ch;
   margin: 0;
 }
-.project_progressSection .progressCardsDiv .progressCard .progressCardContent {
+.project_progressSection .progress_StateCardsDiv .progressCard .progressCardContent {
   margin-top: 30px;
 }
-.project_progressSection .progressCardsDiv .progressCard .progressCardContent .progressCardItem {
+.project_progressSection .progress_StateCardsDiv .progressCard .progressCardContent .progressCardItem {
   border-bottom: 1px solid #052F5F;
   padding-bottom: 20px;
   margin-top: 10px;
 }
-.project_progressSection .progressCardsDiv .progressCard .progressCardContent .progressCardItem h3 {
+.project_progressSection .progress_StateCardsDiv .progressCard .progressCardContent .progressCardItem h3 {
   margin: 0;
 }
 
@@ -687,6 +716,24 @@ header nav .links a:hover {
   .project_progressSection .progressCardsDiv .progressCard {
     flex: 1 1 calc(50% - 30px);
     width: auto;
+  }
+}
+@media (max-width: 1024px) {
+  .index_progressSection .header {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .index_progressSection .progressSectionHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .index_progressSection .progressSectionHeader p {
+    font-size: 32px;
+    margin-bottom: 0;
+  }
+  .index_progressSection .progressSectionHeader .wayfarerGameLogo {
+    width: 100%;
+    max-width: 455px;
   }
 }
 @media (max-width: 767px) {
@@ -826,6 +873,12 @@ header nav .links a:hover {
   align-items: center;
   padding-top: 20px;
 }
+.team_teamSection .sectionHeader {
+  margin-bottom: 40px;
+  color: #052F5F;
+  font-size: 45px;
+  font-weight: bolder;
+}
 .team_teamSection h1 {
   margin-bottom: 40px;
 }
@@ -838,6 +891,11 @@ header nav .links a:hover {
   padding-top: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid black;
+}
+.team_teamSection .teamMembersDiv .teamMember .teamMem_name {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
 }
 .team_teamSection .teamMembersDiv .teamMember .tmLeft {
   width: 200px;
@@ -853,16 +911,6 @@ header nav .links a:hover {
 }
 .team_teamSection .teamMembersDiv .teamMember .tmRight {
   width: 600px;
-}
-.team_teamSection .teamMembersDiv .teamMember .tmRight .teamMem_name {
-  margin: 0;
-  font-size: 30px;
-  font-weight: bold;
-}
-.team_teamSection .teamMembersDiv .teamMember .tmRight .role {
-  margin-top: 5px;
-  font-size: 14px;
-  letter-spacing: 2px;
 }
 .team_teamSection .teamMembersDiv .teamMember .tmRight .memberSocialLinks {
   width: 100%;
@@ -1010,8 +1058,29 @@ header nav .links a:hover {
 }
 .footerRightSection .footerRightContent .socialsContainer .socialsList .socialLink p {
   text-align: center;
-  margin-top: 5px;
+  margin-top: 1px;
   margin-left: 10px;
+}
+.footerRightSection .footerRightContent .pagesContainer {
+  display: flex;
+  flex-direction: column;
+}
+.footerRightSection .footerRightContent .pagesContainer .pageLinkHeader p {
+  color: #F1A208;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #005377;
+}
+.footerRightSection .footerRightContent .pagesContainer .pageLinksList {
+  height: 125px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.footerRightSection .footerRightContent .pagesContainer .pageLinksList a {
+  color: #F9F9F4;
 }
 .footerRightSection .footerRightContent .copyRightContainer {
   display: flex;
@@ -1033,26 +1102,6 @@ header nav .links a:hover {
   color: #F9F9F4;
   margin-bottom: 30px;
   text-decoration: underline;
-}
-.footerRightSection .footerRightContent .pagesContainer {
-  display: flex;
-  flex-direction: column;
-}
-.footerRightSection .footerRightContent .pagesContainer .pageLinkHeader p {
-  color: #F1A208;
-  font-weight: bold;
-  font-size: 16px;
-  letter-spacing: 2px;
-  padding-bottom: 10px;
-  border-bottom: 3px solid #005377;
-}
-.footerRightSection .footerRightContent .pagesContainer .pageLinksList {
-  display: flex;
-  flex-direction: column;
-}
-.footerRightSection .footerRightContent .pagesContainer .pageLinksList a {
-  color: #F9F9F4;
-  margin-bottom: 30px;
 }
 
 footer {

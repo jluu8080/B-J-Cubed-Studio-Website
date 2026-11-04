@@ -8,6 +8,11 @@
     
     border-bottom: transparent !important;
 
+    h1
+    {
+        color:#052F5F;
+    }
+
     .progressSectionHeader
     {
         // background-color:aliceblue;
@@ -47,7 +52,7 @@
         p
         {
             margin:0;
-            width:50ch;
+            max-width:100ch;
         }
     }
 
@@ -67,6 +72,7 @@
         .progress_barCard
         {
             // background-color: red;
+            width: 400px;
 
             // padding-left: 15px;
             // padding-right: 15px;
@@ -117,6 +123,7 @@
                 {
                     font-size: 22px;
                     font-family: poppins-bold !important;
+                    color:#052F5F;
                 }
 
                 .state

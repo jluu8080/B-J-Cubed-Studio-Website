@@ -48,17 +48,29 @@ a
     color: #F1A208 ;
 }
 
-// main, nav
-// {
-//     // padding-left:45px;
-//     // padding-right:45px;
-// }
+.rolesContainer
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 
-// section
-// {
-//     // margin-bottom:25px;
-//     // border-bottom:1px solid black;
-// }
+    .mainRole
+    {
+        margin: 0;
+        margin-bottom: 5px;
+
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+
+    .subRoles
+    {
+        width: 100%;
+
+        color: #555;
+        font-size: 14px;
+    }
+}
 
 .header
 {
