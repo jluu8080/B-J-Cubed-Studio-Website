@@ -13,7 +13,8 @@
     .progressUpdatesDiv
     {
         display:flex;
-        justify-content: space-between;
+        justify-content: flex-start;
+        gap: 10px; //Temporary, until Old Entries can come in.
 
         margin-bottom:10px;
 

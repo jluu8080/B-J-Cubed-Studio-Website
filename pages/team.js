@@ -184,7 +184,7 @@ export default
     <img src="images/heroImage.webp">
 
     <p>
-        B&J³ Games is a small, independent board game studio made up of four creators: Ben Fox, Jacob Fox, Julian Banks, and Jason Luu. Founded as part of our N443 course at IU Indianapolis, the studio brings together game design, writing, art, and programming to create tabletop experiences.<br><br>
+        B&J-Cubed Games is a small, independent board game studio made up of four creators: Ben Fox, Jacob Fox, Julian Banks, and Jason Luu. Founded as part of our N443 course at IU Indianapolis, the studio brings together game design, writing, art, and programming to create tabletop experiences.<br><br>
 
         Every member of the team plays a part in shaping it, from designing mechanics and writing the world to creating the art, building the digital tools, and playtesting every step of the way. <br><br>
 

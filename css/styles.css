@@ -786,7 +786,8 @@ header nav .links a:hover {
 }
 .projectUpdatesSection .progressUpdatesDiv {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 10px;
   margin-bottom: 10px;
 }
 .projectUpdatesSection .progressUpdatesDiv .progressUpdateCard {

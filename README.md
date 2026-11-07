@@ -1,6 +1,6 @@
-#  B&J³ Studio Website
+#  B&J-Cubed Studio Website
 
-Website for B&J³ Games.
+Website for B&J-Cubed Games.
 
 > **Naming note:** the site was rebranded to *Wizards Lizards Games*, but that name is taken, so another rebrand is coming. The studio name across the site and this README is still subject to change.
 

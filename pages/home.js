@@ -16,7 +16,7 @@ export default
         <div class="gameStudioLogo"></div>
     </div>
 
-    <p class="heroContent">B&J³ Games is a small, independent board game studio made up of four creators: Ben Fox, Jacob Fox, Julian Banks, and Jason Luu. The studio brings together game design, writing, art, and programming to create tabletop experiences.</p>
+    <p class="heroContent">B&J-Cubed Games is a small, independent board game studio made up of four creators: Ben Fox, Jacob Fox, Julian Banks, and Jason Luu. The studio brings together game design, writing, art, and programming to create tabletop experiences.</p>
 
     
 </section>
@@ -124,7 +124,7 @@ export default
 
     <div class="phasesDiv">
         <p class="phasesDivHeader">Phases</p>
-        <p>Every game starts as an idea, but turning it into something people can sit down and play takes time, testing, and a lot of revisions. At B&J³ Games, we build Wayfarer in phases, so each step gives us a solid foundation for the next. Here's where we've been and where we're headed.</p>
+        <p>Every game starts as an idea, but turning it into something people can sit down and play takes time, testing, and a lot of revisions. At B&J-Cubed Games, we build Wayfarer in phases, so each step gives us a solid foundation for the next. Here's where we've been and where we're headed.</p>
     </div>
 
     <h1>Our Progress:</h1>
