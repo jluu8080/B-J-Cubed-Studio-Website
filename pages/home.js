@@ -86,7 +86,7 @@ export default
                     <p class="subRoles">Game Writer • Play Tester • Marketer</p>
                 </div>
                 
-                <p>Coming Soon...</p>
+                <p>Game designer and writer with a passion for TTRPGs and strategy games.</p>
             </div>
         </div>
 

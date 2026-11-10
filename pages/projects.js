@@ -219,13 +219,13 @@ export default
 
     <div class="progressUpdatesDiv">
         <div class="progressUpdateCard">
-            <div class="progressUpdateImg">Photo Coming Soon</div>
+            <div class="progressUpdateImg">N/A</div>
 
             <div class="progressUpdateContent">
                 <p class="progressUpdateDate">Nov. 7 (Sat.)</p>
-                <h3>#1: Coming Soon</h3>
+                <h3>#4: Definitive Launch of Website</h3>
 
-                <p>Coming Soon</p>
+                <p>Programming: <br> I've finally got the website flushed out with responsiveness for mobile devices and added all of our desired content on this website which took a really, really long time...But I got 'er done! There will be continous content updates to this website as more progress has been made from us..</p>
             </div>
         </div>
 
